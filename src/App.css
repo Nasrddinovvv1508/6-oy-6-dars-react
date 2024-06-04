@@ -23,3 +23,9 @@ nav a {
   color: #333;
   padding: 4px 10px;
 }
+
+nav a.active {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
