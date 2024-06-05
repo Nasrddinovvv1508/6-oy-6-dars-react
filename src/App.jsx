@@ -1,3 +1,4 @@
+import './fonts.css'
 import './App.css'
 
 // react router dom
@@ -14,19 +15,26 @@ function App() {
     <div className='App'>
       <BrowserRouter>
 
-        <nav>
-          <h1>My Articles</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+        <nav className='container-speacial'>
+          <div className='pages'>
+
+            <Link to="/">
+              <img src="./src/assets/myteam.svg" alt="MyTeam Logo" />
+            </Link>
+            <div>
+              <NavLink to="/">home</NavLink>
+              <NavLink to="/about">about</NavLink>
+            </div>
+          </div>
+          <NavLink className="contactUS" to="/contact">contact us</NavLink>
         </nav>
 
         {/* Pages */}
         <Routes>
 
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/contact' element={<Contact />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
 
         </Routes>
 

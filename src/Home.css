@@ -1,0 +1,29 @@
+.Home {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    div {
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.Home h1 {
+    font-family: Livvic;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: left;
+    /* width: 635px; */
+
+    span {
+        color: #F67E7E;
+    }
+}

@@ -2,17 +2,30 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+.container-speacial {
+  max-width: 1110px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .App {
   max-width: 960px;
   margin: 0 auto;
 }
 
+body {
+  font-family: 'Livvic';
+}
+
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto 60px;
   gap: 10px;
   align-items: center;
+  margin-top: 30px;
 }
 
 nav h1 {
@@ -20,12 +33,37 @@ nav h1 {
 }
 
 nav a {
-  color: #333;
-  padding: 4px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contactUS {
+  border: 2px solid #fff;
+  padding: 10px 32px;
+  border-radius: 50px;
+}
+
+.contactUS:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 nav a.active {
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
+  color: #F67E7E;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  div {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+  }
 }
